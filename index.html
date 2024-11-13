@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>SuperFan Site - Ray</title>
+  </head>
+  <body>
+  <audio id=audioUno">
+    <source src="sounds/japan.mp3" type="audio/mpeg">
+  </audio>
+    <div class="row2">
+      <div class="box center nclick">
+        <img src="images/text.png" />
+      </div>
+      <div class="box1">
+        <div class="box3 center">
+          <img src="images/LIL.png" 
+          onclick="play2()"
+          class="clickable" 
+          />
+        </div>
+        <div class="box3 center nclick">
+          <img src="images/noodles.png" />
+        </div>
+      </div>
+      <div class="box1">
+        <div class="box3 center">
+          <img src="images/rice.png" 
+          onclick="spin()" 
+          id="rice"
+          class="clickable"
+          />
+        </div>
+        <div class="box3 center">
+          <img src="images/japan.png" 
+          onclick="play1()"
+          class="clickable" 
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row3">
+      <div class="row center nclick">
+        <img src="images/down.png" />
+      </div>
+      <div class="row">
+        <div class="box4 center nclick">
+            <video height="95%" id="video">
+                <source src="videos/dance.mp4" type="video/mp4" 
+                onclick="dance()"; >
+              </video>
+        </div>
+        <div class="box4 center">
+          <img src="images/button.png" 
+          onclick="dance()" 
+          class="clickable"
+          />
+        </div>
+        <div class="box5 center">
+          <img src="images/headshot1.png" 
+          class="clickable"
+          onclick="woah()"
+          id="hs1"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="nrow">
+      <div class="box2 center">
+        <img src="images/rice.png"
+        onclick=nspin();
+        id="nrice">
+      </div>
+      <div class="box2 center nclick">
+        <img src="images/noodles.png">
+      </div>
+    </div>
+    <div class="nrow">
+      <div class="box2 center">
+       <img src="images/japan.png"
+         onclick=nplay1();>
+      </div>
+      <div class="box2 center">
+          <img src="images/LIL.png"
+            onclick=nplay2();>
+         </div>
+    </div>
+    <div class="nrow2 center">
+      <img src="images/headshot1.png"
+      onclick="nwoah()"
+      id="nhs1"
+      >
+    </div>
+    <div class="nrow3 center">
+      <video id="nvideo" width="100%" onclick=ndance(); >
+         <source src="videos/dance.mp4" type="video/mp4"> </source>
+      </video>
+    </div>
+
+    <audio src="sounds/japan.mp3" id="song1"></audio>
+    <audio src="sounds/LIL.mp3" id="song2"></audio>
+    <audio src="sounds/woah.mp3" id="audio1"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
